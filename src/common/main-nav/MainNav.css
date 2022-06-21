@@ -1,0 +1,11 @@
+.main-nav ul {
+  margin: 0;
+}
+
+.main-nav li ul {
+  margin-bottom: .5rem;
+}
+
+.main-nav li {
+  margin-bottom: .25rem;
+}

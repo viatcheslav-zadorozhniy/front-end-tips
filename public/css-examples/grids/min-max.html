@@ -1,0 +1,21 @@
+<style>
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid > div {
+    overflow: auto;
+  }
+
+  .example-1 {
+    grid-auto-rows: minmax(50px, 100px);
+  }
+</style>
+
+<h3>Function minmax()</h3>
+
+<div class="example">
+  <div class="example-1 grid base-gap" is="grid-example">
+    <div>One<br>Has<br>More<br>Content<br>And<br>Is<br>Taller<br>Than<br>50px.</div>
+  </div>
+</div>

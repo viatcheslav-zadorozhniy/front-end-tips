@@ -1,0 +1,37 @@
+<style>
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .grid > div:nth-child(1),
+  .grid > div:nth-child(2) {
+    grid-column: auto/span 2;
+  }
+
+  .example-1 {
+    grid-auto-flow: row;
+  }
+
+  .example-2 {
+    grid-auto-flow: row dense;
+  }
+
+  .example-3 {
+    grid-auto-flow: column;
+  }
+</style>
+
+<h3>Auto flow</h3>
+
+<div class="example">
+  <div class="example-1 grid base-gap" is="grid-example" data-children-amount="5"></div>
+</div>
+
+<div class="example">
+  <div class="example-2 grid base-gap" is="grid-example" data-children-amount="5"></div>
+</div>
+
+<div class="example">
+  <div class="example-3 grid base-gap" is="grid-example" data-children-amount="5"></div>
+</div>

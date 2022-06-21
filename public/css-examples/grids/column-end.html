@@ -1,0 +1,37 @@
+<style>
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .example-1 {
+    grid-column-end: 3;
+  }
+
+  .example-2 {
+    grid-column-end: -1;
+  }
+
+  .example-3 {
+    grid-column-end: span 2;
+  }
+</style>
+
+<h3>Column end</h3>
+
+<div class="example">
+  <div class="grid base-gap" is="grid-example" data-children-amount="3">
+    <div class="example-1">One</div>
+  </div>
+</div>
+
+<div class="example">
+  <div class="grid base-gap" is="grid-example" data-children-amount="3">
+    <div class="example-2">One</div>
+  </div>
+</div>
+
+<div class="example">
+  <div class="grid base-gap" is="grid-example" data-children-amount="3">
+    <div class="example-3">One</div>
+  </div>
+</div>

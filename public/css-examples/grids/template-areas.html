@@ -1,0 +1,57 @@
+<style>
+  .grid {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .example-1 {
+    grid-template-areas:
+      "header header"
+      "sidebar content"
+      "footer footer";
+
+    grid-area: header;
+    grid-area: sidebar;
+    grid-area: content;
+    grid-area: footer;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  aside {
+    grid-area: sidebar;
+  }
+
+  main {
+    grid-area: content;
+  }
+
+  .example footer {
+    grid-area: footer;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+</style>
+
+<h3>Grid template areas</h3>
+
+<div class="example">
+  <article class="example-1 grid base-gap" is="grid-example" data-children-amount="4">
+    <header class="example-2">Header</header>
+
+    <aside>
+      <h2>Sidebar</h2>
+      <div>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada ultrices. Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed est.</div>
+    </aside>
+
+    <main>
+      <h2>Main content</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia commodi accusantium enim eos expedita cupiditate minima a, minus voluptatum exercitationem reprehenderit quas earum iure dolores aliquam alias dolorem dolor veniam?</p>
+    </main>
+
+    <footer>Footer</footer>
+  </article>
+</div>

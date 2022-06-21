@@ -1,0 +1,13 @@
+.learn-promises code {
+  background-color: #eee;
+  border-radius: 3px;
+  display: block;
+  font-family: courier, monospace;
+  margin-top: 1rem;
+  padding: 0.5rem 0.25rem;
+  white-space: pre-wrap;
+}
+
+.learn-promises code:empty {
+  display: none;
+}

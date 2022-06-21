@@ -1,0 +1,66 @@
+<style>
+  .example article {
+    padding-right: 10px;
+    max-width: 510px;
+  }
+
+  .example section {
+    column-count: 2;
+    column-gap: 25px;
+  }
+
+  .card {
+    border: 1px solid gray;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    padding: .25rem .5rem;
+  }
+
+  .example-1 {
+    break-inside: avoid;
+  }
+</style>
+
+<h3>Columns and fragmentation (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fragmentation" target="_blank" rel="noopener">CSS Fragmentation Module</a>)</h3>
+
+<div class="example">
+  <article>
+    <section>
+      <div class="card">
+        <h2>I am the heading</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula.</p>
+      </div>
+
+      <div class="card">
+        <h2>I am the heading</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula.</p>
+      </div>
+
+      <div class="card">
+        <h2>I am the heading</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula.</p>
+      </div>
+    </section>
+  </article>
+</div>
+
+<div class="example">
+  <article>
+    <section>
+      <div class="card example-1">
+        <h2>I am the heading</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula.</p>
+      </div>
+
+      <div class="card example-1">
+        <h2>I am the heading</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula.</p>
+      </div>
+
+      <div class="card example-1">
+        <h2>I am the heading</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet orci vel, viverra egestas ligula.</p>
+      </div>
+    </section>
+  </article>
+</div>

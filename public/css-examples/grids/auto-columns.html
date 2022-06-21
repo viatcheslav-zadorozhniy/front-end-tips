@@ -1,0 +1,37 @@
+<style>
+  .grid div:first-child {
+    grid-column: 2;
+  }
+
+  .example-1 {
+    grid-auto-columns: 100px 200px;
+  }
+
+  .example-2 {
+    grid-auto-columns: min-content;
+  }
+
+  .example-3 {
+    grid-auto-columns: max-content;
+  }
+</style>
+
+<h3>Auto columns</h3>
+
+<div class="example">
+  <div class="example-1 grid" is="grid-example" data-children-amount="8" data-children8-content="Lorem ipsum dolor sit amet">
+    <div>One</div>
+  </div>
+</div>
+
+<div class="example">
+  <div class="example-2 grid" is="grid-example" data-children-amount="8" data-children8-content="Lorem ipsum dolor sit amet">
+    <div>One</div>
+  </div>
+</div>
+
+<div class="example">
+  <div class="example-3 grid" is="grid-example" data-children-amount="8" data-children8-content="Lorem ipsum dolor sit amet">
+    <div>One</div>
+  </div>
+</div>
