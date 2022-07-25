@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Using Web Workers</title>
+  <style>
+    code {
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="page-title">Using Web Workers</h1>
+
+  <details open>
+    <summary>Worker</summary>
+    <p>Click the button to send a message to the worker.</p>
+    <div>
+      <button type="button" id="to-worker">To worker</button>
+    </div>
+    <br>
+  </details>
+
+  <details ontoggle="userId.focus()">
+    <summary>Shared Worker</summary>
+    <br>
+    <form>
+      <div>
+        <label for="userId">User id:</label>
+        <input type="number" name="userId" id="userId" min="1" max="10">
+      </div>
+    </form>
+
+    <code id="user-data"></code>
+  </details>
+
+  <script src="./scripts/main.mjs" type="module"></script>
+</body>
+</html>
